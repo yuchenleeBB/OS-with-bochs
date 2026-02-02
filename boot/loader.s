@@ -16,6 +16,8 @@ section loader vstart=LOADER_BASE_ADDR
     mov bh, 0x00
     mov bl, 0x09
     mov cx, 0x08
+    add dh, 1
+    mov dl, 0
     int 0x10
 
 ; pause 
